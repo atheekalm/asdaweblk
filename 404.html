@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Not Found</title>
+  </head>
+  <body>
+    <script>
+      const path = window.location.pathname;
+      const basePath = '/your-repo-name';
+      const newLocation = basePath + (path.endsWith('/') ? path : path + '/');
+      window.location.replace(newLocation);
+    </script>
+  </body>
+</html>
